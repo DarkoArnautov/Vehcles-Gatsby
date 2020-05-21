@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const SliderWrap = styled.div`
+	margin-top: 80px;
 	width: 150%;
 	.gatsby-image-wrapper {
 		width: 100%;

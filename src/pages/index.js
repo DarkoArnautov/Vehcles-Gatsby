@@ -32,7 +32,16 @@ export const pageQuery = graphql`
             name
             year
           }
-          
+          images {
+            fluid {
+              base64
+              sizes
+              src
+              srcSet
+              srcSetWebp
+              srcWebp
+            }
+          }
           featureImage {
             fluid {
               base64
