@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Link } from "gatsby"
 import ArrowIcon from "./Icons/ArrowIcon"
+import BookMarkIcon from "./Icons/BookMarkIcon"
 import ItemHover from "./ItemHover"
 
 import Slider from "react-slick";
@@ -194,6 +195,14 @@ const LotLabel = styled.div`
   color: white;
   background: rgba(0, 0, 0, 0.4);
 `
+const BookMark = styled.div`
+	position: absolute;
+	z-index: 50;
+	top: 25px;
+	right: 28px;
+	width: 25px;
+	display: ${props=>props.display};
+`
 function SampleNextArrow(props) {
   const { className, style} = props;
   return (
@@ -240,6 +249,9 @@ class VehcleList extends React.Component {
 	  		{
 	  			hoverItem => (
 	  				<SliderWrap>
+	  					<BookMark display={hoverItem?"block":"none"} >
+	  						<BookMarkIcon />
+	  					</BookMark>
 				  		<div style={{ textAlign: "center" }}>
 								<LeftArrow display={hoverItem?"block":"none"} onClick={this.previous}>
 			             <ArrowIcon fill="white" />

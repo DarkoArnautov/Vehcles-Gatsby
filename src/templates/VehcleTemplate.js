@@ -78,7 +78,7 @@ const LotNumb = styled.div`
   	width: 18px;
   	height: 18px;
   	vertical-align: middle;
-  	margin-top: -5px;
+  	margin: -5px 5px 0;
   	&:nth-child(2) {
 	  	transform: rotate(180deg);
 	  }
