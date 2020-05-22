@@ -13,6 +13,9 @@ const Hero = styled.div`
 	width: 100%;
 	height: 100vh;
 	max-height: 814px;
+	@media(max-width: 600px) {
+		max-height: 80vw;
+	}
 `
 const HeroWrap = styled.div`
 	position: relative;
